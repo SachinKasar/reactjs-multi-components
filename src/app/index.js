@@ -10,16 +10,16 @@ class App extends React.Component {
 		let fourWheelSpecs = {manufacturer : "Maruti Suzuki"};
 		
         return ( 
-			<div style={{border: '5px solid grey'}}> 
-				 <div className="container">
+			<div > <br/>
+				 <div className="container"  >
 					<div className="row">
 						<div className="row">
 							<TwoWheeler name="Enfield Classic" specs={twoWheelSpecs}/>
 						</div>
 					</div>
 				  </div>
-			  
-				  <div className="container">
+			      <br/>
+				  <div className="container" >
 					<div className="row">
 						<div className="row">
 							<FourWheeler name="Grand Vitara" specs={fourWheelSpecs}/>
