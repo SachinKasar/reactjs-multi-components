@@ -5,6 +5,7 @@ import {render} from "react-dom";
 export class TwoWheeler extends React.Component {
     render() {
         return ( 
+            <div className="container" style={{border: '1px solid grey'}}>
 		    <div className="container" >
                 <div className="row">
 				    <div className="row">
@@ -20,7 +21,9 @@ export class TwoWheeler extends React.Component {
 					</div>
 				</div>
 				</div>
+            </div>
       
         );
     } 
 }
+
