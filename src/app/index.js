@@ -9,9 +9,7 @@ import {AppFooter} from "./components/AppFooter";
 
 class App extends React.Component {
     render() {
-		let twoWheelSpecs = {manufacturer : "Royal Enfield"};
-		let fourWheelSpecs = {manufacturer : "Maruti Suzuki"};
-        
+		 
         let headerComponent =  ( 
                                  <div className="row">
                                     <div className="col-xs-10 col-xs-offset-1" >
@@ -37,7 +35,7 @@ class App extends React.Component {
             <br/>   
             <div className="row">
                       <div className="col-xs-10 col-xs-offset-1" >
-                         <TwoWheeler name="Enfield Classic" specs={twoWheelSpecs}/>
+                         <TwoWheeler/>
                       </div>
                 </div>
 				   
@@ -45,7 +43,7 @@ class App extends React.Component {
             
               <div className="row">
                   <div className="col-xs-10 col-xs-offset-1">
-                        <FourWheeler name="Grand Vitara" specs={fourWheelSpecs}/>
+                        <FourWheeler/>
                    </div>
                </div>
             </div>
