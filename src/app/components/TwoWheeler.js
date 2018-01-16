@@ -5,11 +5,9 @@ import {render} from "react-dom";
 export class TwoWheeler extends React.Component {
     render() {
         return ( 
-            <div className="container" style={{border: '1px solid grey'}}>
-		    <div className="container" >
-                <div className="row">
-				    <div className="row">
-						<h1 style={{color:'blue'}}> Two Wheeler </h1>
+             
+				    <div  className="alert alert-warning" style={{border: '1px solid grey'}}>
+						<h1 style={{color:'blue', margin:'5px 5px 5px 5px'}}> Two Wheeler </h1>
 						<ul>
 							<li>
 								<b>Name :</b> {this.props.name}
@@ -19,11 +17,10 @@ export class TwoWheeler extends React.Component {
 							</li>
 						</ul>
 					</div>
-				</div>
-				</div>
-            </div>
+				 
       
         );
     } 
 }
 
+ 
