@@ -3,11 +3,9 @@ import React from "react";
 // FourWheel as a Functional Component
 export const FourWheeler = (props) => {
     return ( 
-        <div className="container" style={{border: '1px solid grey'}}>
-		 <div className="container"  >
-			<div className="row">
-				<div className="row">
-					<h1 style={{color:'red'}}> Four Wheeler </h1>
+        <div  className="alert alert-warning" style={{border: '1px solid grey'}}>
+		  
+					<h1 style={{color:'red' , margin:'5px 5px 5px 5px'}}> Four Wheeler </h1>
 					<ul>
 						<li>
 							<b>Name :</b>  {props.name}
@@ -17,8 +15,6 @@ export const FourWheeler = (props) => {
 						</li>
 					</ul>
 				</div>
-			</div>
-		  </div>
-         </div>
+			 
         );
 };
