@@ -11,15 +11,27 @@ class App extends React.Component {
     render() {
 		let twoWheelSpecs = {manufacturer : "Royal Enfield"};
 		let fourWheelSpecs = {manufacturer : "Maruti Suzuki"};
+        
+        let headerComponent =  ( 
+                                 <div className="row">
+                                    <div className="col-xs-10 col-xs-offset-1" >
+                                       <AppHeader/>
+                                    </div>
+                                  </div>
+                                );
+        
+        let footerComponent = (
+                                <div className="row" style={{marginTop: '350px'}}>
+                                      <div className="col-xs-10 col-xs-offset-1" >
+                                         <AppFooter/>
+                                      </div>
+                                </div>
+                              );
 		
         return ( 
 			 <div className="container"  >
             
-               <div className="row">
-                      <div className="col-xs-10 col-xs-offset-1" >
-                         <AppHeader/>
-                      </div>
-                </div>
+            { headerComponent }
 				    
             <div className="row col-xs-10 col-xs-offset-1" style={{border: '1px solid grey'}} >
             <br/>   
@@ -38,12 +50,8 @@ class App extends React.Component {
                </div>
             </div>
             
-             <div className="row" style={{marginTop: '350px'}}>
-                      <div className="col-xs-10 col-xs-offset-1" >
-                         <AppFooter/>
-                      </div>
-                </div>
-				   
+             
+            { footerComponent }
 			  </div>
         );
     } 
