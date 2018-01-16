@@ -10,10 +10,10 @@ export class TwoWheeler extends React.Component {
 						<h1 style={{color:'blue', margin:'5px 5px 5px 5px'}}> Two Wheeler </h1>
 						<ul>
 							<li>
-								<b>Name :</b> {this.props.name}
+								<b>Name :</b> Enfield Classic
 							</li>
 							<li>
-								<b>By :</b> {this.props.specs.manufacturer}
+								<b>By :</b> Royal Enfield
 							</li>
 						</ul>
 					</div>
