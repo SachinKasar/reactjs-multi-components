@@ -1,5 +1,5 @@
 import React from "react";
-import {render} from "react-dom";
+
 
 // TwoWheel as a Class Component
 export class TwoWheeler extends React.Component {
