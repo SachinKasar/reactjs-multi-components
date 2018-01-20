@@ -28,28 +28,25 @@ class App extends React.Component {
 		
         return ( 
 			 <div className="container"  >
-            
-            { headerComponent }
-				    
-            <div className="row col-xs-10 col-xs-offset-1" style={{border: '1px solid grey'}} >
-            <br/>   
-            <div className="row">
-                      <div className="col-xs-10 col-xs-offset-1" >
-                         <TwoWheeler/>
-                      </div>
-                </div>
-				   
-              <br/>
-            
-              <div className="row">
-                  <div className="col-xs-10 col-xs-offset-1">
-                        <FourWheeler/>
-                   </div>
-               </div>
-            </div>
-            
-             
-            { footerComponent }
+                    { headerComponent }
+
+                    <div className="row col-xs-10 col-xs-offset-1" 
+                            style={{border: '1px solid grey'}} >
+                        <br/>   
+                        <div className="row">
+                              <div className="col-xs-10 col-xs-offset-1" >
+                                 <TwoWheeler/>
+                              </div>
+                        </div><br/>
+
+                          <div className="row">
+                              <div className="col-xs-10 col-xs-offset-1">
+                                    <FourWheeler/>
+                               </div>
+                           </div>
+                    </div>
+
+                    { footerComponent }
 			  </div>
         );
     } 
